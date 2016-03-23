@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing 3.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FluLeap: Prediction System for Host Tropism of Influenza Virus</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	</head>
+	<body>
+	<!-- ********************************************************* -->
+		<div id="header-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="12u">
+						
+						<header id="header">
+							<h1><a href="index.html" id="logo">FluLeap</a></h1>
+							<nav id="nav">
+								<a href="multiple-proteins">Protein predictor</a>
+								<a href="strain">Strain predictor</a>
+								<a href="about.html">About</a>
+								<a href="data.html">Data</a>
+                                <a href="contact">Contact</a>
+							</nav>
+						</header>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container">
+				<div class="row main-row">
+					<div class="12u">
+						<section>
+                        <div class="8u">
+							<h2>Tutorial</h2>
+							<p>FluLeap provides models for host tropism prediction of influenza proteins. The computational models were trained on avian and human influenza protein sequences and are able to accurately classify between the two hosts with a <a href="supporting-information.html" target="_blank">minimum of 96.57% accuracy</a>. </p>
+
+                            <p>Thus, most of the time, the prediction models would be able to identify the host where the protein sequences were isolated from. For example, when protein sequences from a H3N8 avian strain, <a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/American%20green-winged%20teal/Ohio/13OS1844/2013(H3N8)&decorator=influenza&context=1401711539816" target="_blank">A/American green-winged teal/Ohio/13OS1844/2013</a> were input for prediction, the prediction models would accurately classify host tropism for all its proteins as <predictiona>Avian</predictiona>. Similarly, when protein sequences from a seasonal H3N2 human strain, <a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/Helsinki/951/2013(H3N2)&decorator=influenza&context=1401711597454" target="_blank">A/Helsinki/951/2013</a> were tested, the results for host tropism predictions were all <predictionh>human</predictionh>. To run the host tropism predictions, please click on the buttons below:<br><br>                           
+                            <a href="strain-example?seqType=1" class="button" target="_blank">Avian strain</a>
+                            <a href="strain-example?seqType=4" class="button" target="_blank">Seasonal human strain</a>
+                            </p>
+							
+                            <p>However, a potentially zoonotic avian strain would show different results. If protein sequences from an avian strain were predicted to have human host tropism, the protein is highly likely to have adapted to human host. This can be illustrated by virus strains from the recent H7N9 outbreak in China. Predictions of protein sequences from a virus strain isolated from one of the first H7N9 patients, <a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/Shanghai/02/2013(H7N9)&decorator=influenza&context=1401711677033" target="_blank">A/Shanghai/02/2013</a> show that some of its proteins originated from avian source. Phylogenetic analyses of genomic sequences from H7N9 virus strains revealed <a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/chicken/Shanghai/S1053/2013(H7N9)&decorator=influenza&context=1401711722642" target="_blank">A/chicken/Shanghai/S1053/2013</a> to be a likely source, indicating it as a potential zoonotic strain (<a href="http://www.who.int/influenza/human_animal_interface/influenza_h7n9/WHO_H7N9_review_31May13.pdf?ua=1" target="_blank">World Health Organization, 2013</a>). Running predictions for the protein sequences from the zoonotic strain revealed that 6 of its proteins have acquired human host tropism characteristics. To run the host tropism predictions, please click on the buttons below:<br><br> 
+                            <a href="strain-example?seqType=2" class="button" target="_blank">Zoonotic avian strain</a>
+                            <a href="strain-example?seqType=3" class="button" target="_blank">Avian origin human strain</a>
+                            </p>
+                            
+                            <p>The table below summarizes prediction results for all 4 influenza virus strains: </p>
+          
+                         </div>
+                         
+                            <br>
+                            <table>
+                            <tr><th class="leftcolumn" rowspan="2"><h4>Protein</h4></th><th class="column"><h4>Avian strain</h4></th><th class="column"><h4>Zoonotic avian strain</h4></th><th class="column"><h4>Avian origin human strain</h4></th><th class="column"><h4>Seasonal human strain</h4></th></tr>
+                            <tr><th class="column"><a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/American%20green-winged%20teal/Ohio/13OS1844/2013(H3N8)&decorator=influenza&context=1401711539816" target="_blank">A/American green-winged teal/Ohio/13OS1844/2013</a></th><th class="column"><a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/chicken/Shanghai/S1053/2013(H7N9)&decorator=influenza&context=1401711722642" target="_blank">A/chicken/Shanghai/S1053/2013</a></th><th class="column"><a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/Shanghai/02/2013(H7N9)&decorator=influenza&context=1401711677033" target="_blank">A/Shanghai/02/2013</a></th><th class="column"><a href="http://www.fludb.org/brc/fluStrainDetails.spg?strainName=A/Helsinki/951/2013(H3N2)&decorator=influenza&context=1401711597454" target="_blank">A/Helsinki/951/2013</a></th></tr>
+                            <tr><td class="leftcolumn"><strong>HA</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><</tr>
+							<tr><td class="leftcolumn"><strong>M1</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>M2</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>NA</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>NP</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>NS1</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>NS2</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>PA</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>PB1</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>PB1-F2</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>PB2</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td><td class="column"><predictionh>Human</predictionh></td></tr>
+                            <tr><td class="leftcolumn"><strong>Combined</strong></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictiona>Avian</predictiona></td><td class="column"><predictionh>Human</predictionh></td></tr>
+							</table>
+                            
+                            <div class="8u">
+                            <br><br>
+                            <p>Host tropism predictions on these 4 influenza virus strains demonstrate the capability of FluLeap in identifying potentially hazardous zoonotic avian strains.</p>
+                            
+                            <p>To run predictions on more sample sequences obtained from <a href="http://www.fludb.org/" target="_blank">IRD</a>, please click on the button below:<br>
+                            <a href="sample-sequences.html" class="button">Sample sequences</a></p>
+                            
+                            </div>
+                            
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="8u">
+						
+						<section>
+							<h2>Useful influenza resources</h2>
+							<div>
+								<div class="row">
+									<div class="3u">
+										<ul class="link-list">
+											<li><a href="http://www.ncbi.nlm.nih.gov/genomes/FLU/FLU.html">NCBI Influenza Virus Resource</a></li>
+										</ul>
+									</div>
+									<div class="3u">
+										<ul class="link-list">
+											<li><a href="http://www.fludb.org/brc/home.spg?decorator=influenza">Influenza Research Database</a></li>
+										</ul>
+									</div>
+									<div class="3u">
+										<ul class="link-list">
+											<li><a href="http://www.who.int/influenza/en/">WHO Influenza</a></li>
+										</ul>
+									</div>
+									<div class="3u">
+										<ul class="link-list">
+											<li><a href="http://fluresearch.org/">NIAID Influenza Research Collaboration</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+					
+					</div>
+					<div class="4u">
+
+						<section>
+							<h2>About us</h2>
+							<p>This website is developed by the research team at Bioinformatics Center, Department of Biochemistry, National University of Singapore.</p>
+							<footer class="controls">
+								<a href="http://www.bic.nus.edu.sg/" class="button">More about us...</a>
+							</footer>
+						</section>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u">
+
+						<div id="copyright">
+							&copy; NUS Bioinformatics Center. All rights reserved.
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- ********************************************************* -->
+	</body>
+</html>
